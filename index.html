@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>井上研究室</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<script>
+    function setLanguage(lang) {
+        if (lang === 'en') {
+            window.location.href = 'index-en.html'; // 英語ページへのリダイレクト
+        } else if (lang === 'ja') {
+            window.location.href = 'index.html'; // 日本語ページへのリダイレクト
+        }
+    }
+</script>
+
+<body>
+    <header>
+        <div class="header-top">
+            <h1 class="logo">
+                <img src="univ_logo.jpg" alt="University Logo">
+                <span>Inoue Laboratory</span>
+            </h1>
+            <ul class="language-switcher">
+                <li class="lang-btn active-lang" onclick="setLanguage('ja')">Japanese</li>
+                <li class="lang-btn" onclick="setLanguage('en')">English</li>
+            </ul>
+        </div>
+        <nav>
+            <div class="nav-item"><a href="index.html">トップ</a></div>
+            <div class="nav-item"><a href="research.html">研究内容</a></div>
+            <div class="nav-item dropdown">
+                <a href="member.html">メンバー</a>
+                <div class="dropdown-content">
+                    <div><a href="professor.html">教員</a></div>
+                    <div><a href="students.html#doctor">博士課程</a></div>
+                    <div><a href="students.html#m2">修士２年</a></div>
+                    <div><a href="students.html#m1">博士１年</a></div>
+                    <div><a href="students.html#b4">学部生</a></div>
+                    <div><a href="students.html#gradutated">卒業生</a></div>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#lab-intro">研究室紹介</a>
+                <div class="dropdown-content">
+                    <div><a href="#activity-report">活動報告</a></div>
+                    <div><a href="#activity-photos">活動写真</a></div>
+                </div>
+            </div>
+            <div class="nav-item"><a href="#contact">コンタクト</a></div>
+            <div class="nav-item"><a href="#aspiring-info">学生募集</a></div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="slideshow">
+        <p data-key="slideshow">ここにスライドショーが表示されます。</p>
+    </div>
+
+    <!--
+    <div class="notice-board">
+        <h2>井上研究室卒業生の方へ</h2>
+        <div>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    -->
+
+    <div class="article">
+        <h2 data-key="news">ニュース</h2>
+        <a href="https://educ.titech.ac.jp/iee/news/2023_05/064305.html">■2023年05月　カナダのモントリオール工科大学とファイナンス研究に関する合同ワークショップを行いました。</a><br>
+        <a href="https://www.titech.ac.jp/news/2023/065771">■2023年01月　第2回工学院サステナビリティ・チャレンジ（E×S Challenge)で博士課程のチェン・インさんがリーダーを務めたグループがMicron LAUNCH Award賞を受賞しました。</a><br>
+        <a href="https://www.titech.ac.jp/news/2022/065533">■2022年11月　ブルームバーグESG投資コンテスト2022にて市原さん、住谷さん、石井さん、小川さん、刑部さん、カンさんからなる井上研のチームが準優勝しました。</a><br>
+        <p>■2021年12月　東京工業大学工学院の持続可能性ビジネスアイデアコンテスト(ExS Challenge)のLAUNCHコンテストで林可欣さん他のグループがSTEM AS ONEプロジェクトでMicron LAUNCH Awardを受賞し、副賞30万円を獲得しました。</p>
+        <p>■2021年11月　日本ファイナンス学会　第３回秋季大会にて修士１年の林可欣、修士２年の田中研人、林雪佳が報告しました。</p>
+        林可欣さん　 「機関投資家の ES エンゲージメントと効果」<br>
+        田中研人さん　「企業の情報開示と株式の市場流動性：記述定性情報のケース」<br>
+        林雪佳さん　「銀行におけるジェンダー多様化の効果：銀行貸出業務のケース」<br>
+        <p>■2021年　ブルームバーグESG投資コンテスト2021にて井上研のチームが8校の入賞グループに選出されました。</p>
+        <p>■2021年9月　東京工業大学工学院の持続可能性ビジネスアイデアコンテスト(ExS Challenge)のPITCHコンテストで林さん他のグループがMicron PITCH Awardを受賞しました。</p>
+        <p>■<a href="kaityoukouen.pdf">2021年6月　井上教授が第29回日本ファイナンス学会大会で会長講演を行いました。</a></p>
+        <p>■2021年1月　佐藤他の論文「有価証券報告書のテキスト分析による株式のリスクファクター分析」が証券アナリストジャーナル(59)に掲載されました。</p>
+        <p>■2021年1月　小室他の論文「企業間の類似性とM&A：テキスト分析アプローチ」が日本金融学会機関誌『金融経済研究』に掲載決定しました。</p>
+        <p>■<a href="bloomberg.pdf">2021年1月　「BloombergInvestmentContest2020　ESGInvestment」のファイナリストに残った武田さん、程さん、林さんのレポートが公開されました。</a></p>
+        <p>■2019年6月　修士1年の日高さんが日本ファイナンス学会にて「機関投資家のモニタリングインセンティブと投資先企業の収益性」を報告しました。</a></p>
+        <p>■2019年3月　宮城県仙台市で開催された日本経営財務研究学会の若手登竜門のワークショップ「ファイナンスキャンプ」で修士2年の木村さん、昼田さん、白石さんの3人がそれぞれの論文を英語で報告しました。</a></p>
+        <p>■2018年12月、国際ワークショップInternational Workshop: Digital Innovation in Financeにおいて、修士2年の小室さん、修士1年の佐藤さんが論文報告を行いました。</a></p>
+        <p>■2018年10月、日本経営財務研究学会全国大会で修士1年の佐藤さん、修士2年の小室さんと昼田さんがそれぞれ以下のタイトルの論文発表を行いました。<br>
+        佐藤さん「有価証券報告書のテキストマイニングによる株式のリスクファクター分析」<br>
+        小室さん「企業間の事業類似性とM&A：テキスト分析アプローチ」<br>
+        昼田さん「日本企業による国内外M&Aのパフォーマンス分析」</a></p>
+        <p>■2018年12月、修士修了生松浦さんの共著論文、「ブランド力が企業価値と収益性に与える影響」が『経営財務研究』 Vol 38, No 1-2に掲載されました。</a></p>
+        <p>■2018年10月　修士修了生の小澤さんが共著者として参加している論文、「PE投資のベンチマーク：構築と検証」が証券アナリストジャーナルVol. 56, No. 10に掲載されました。</a></p>
+        <p>■2018年9月　修士修了生の渡辺さんが共著者として参加している論文、Enjoying the quiet life: Corporate decision-making by entrenched managersが、米国のNBER(National Bureau of Economic Research)のWorking Paperとして採用されました。</a></p>
+        <p>■2018年7月　日本経営財務研究学会東日本部会（統一論文「日本企業のCSR」）で修士1年の藍口さんが同じく修士1年の泉山さんとの共著の「機関投資家と企業のESG活動：国際比較分析」を報告しました。</a></p>
+        <p>■2018年3月　修士修了生渡辺さんが共著者として参加した論文Enjoying the quiet life: Corporate decision-making by entrenched managersが日本に関する経済学のTop JournalであるJournal of Japanese and International Economies, Vol. 47に掲載されました。</a></p>
+        <p>■2018年7月　Universitat ZurichのAlexander Wagner准教授のセミナーを開催しました。</a></p>
+        <p>■2018年3月　鹿児島で開催された日本経営財務研究学会の若手登竜門のワークショップ「ファイナンスキャンプ」で修士2年の秋江さん、岩崎さん、花村さんの3人がそれぞれの論文を英語で報告しました。</a></p>
+    </div>
+    </div>
+    
+
+    <footer>
+        <p data-key="copyright">&copy; 2024 Inoue Laboratory. All rights reserved.</p>
+    </footer>
+</body>
+</html>

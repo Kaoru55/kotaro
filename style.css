@@ -1,0 +1,178 @@
+/* 基本のリセットとボックスサイジングの設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* ヘッダー */
+header {
+    background: #ffffff; /* ヘッダーの背景色 */
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* 影をつける */
+    width: 100%;
+    position: fixed; /* ヘッダーをページの上部に固定 */
+    top: 0; /* ページの最上部から配置 */
+    left: 0; /* 左端から配置 */
+    z-index: 1000; /* 他の要素より前面に表示 */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+span{
+    font-size: 2rem;
+}
+
+
+.language-switcher {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher .lang-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff; /* Default background */
+}
+
+.nav-item:hover, .dropdown-content div:hover {
+    background-color: #CCCCCC; /* Change color on hover */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Make link fill the div for wider hover effect */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 100%; /* ドロップダウンの幅を親要素に合わせる */
+    white-space: nowrap; /* テキストの折り返しを防ぐ */
+    left: 0; /* 親要素の左端に合わせる */
+    top: 100%; /* 親要素の下端から表示させる */
+}
+
+.dropdown-content div{
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff; /* Default background */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover > a {
+    background-color: #CCCCCC; /* Change color on hover for dropdown trigger */
+}
+
+.active-lang {
+    color: rgb(0, 0, 0); /* 現在選択されている言語を赤色で表示*/
+    font-weight: bold;
+}
+
+
+
+/*ボディ*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f2;
+    font-size: 0.9rem;
+    display:block ;
+}
+
+/* ヘッダー固定による余白調整 */
+.main-container {
+    width: 600px;
+
+    padding-top: 60px;  /* ヘッダーの高さに応じて調整 */
+    margin: auto;
+    margin-top: 80px; /* ヘッダー下部からの距離を確保 */
+    padding-bottom: 40px; /* フッターとの間に適切なスペースを確保 */
+}
+
+h2{
+    font-size: 1.5rem;
+    padding: 7px 0 5px 10px;
+    border-left: solid 5px #333;
+    border-bottom: solid 1px #333;
+    margin-bottom: 7px;
+}
+
+h3{
+    padding: 5px 0 0px 3px;
+}
+
+.slideshow, .news {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.news h2 {
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* フッターが常にページ下部に表示されるように変更 */
+    width: 100%;
+}
+
+
+
+/*メンバーページ*/
+
+
+.professor div{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
