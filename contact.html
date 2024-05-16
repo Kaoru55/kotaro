@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>井上研究室</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<script>
+    function setLanguage(lang) {
+        if (lang === 'en') {
+            window.location.href = 'index-en.html'; // 英語ページへのリダイレクト
+        } else if (lang === 'ja') {
+            window.location.href = 'index.html'; // 日本語ページへのリダイレクト
+        }
+    }
+</script>
+
+<body>
+    <header>
+        <div class="header-top">
+            <h1 class="logo">
+                <img src="univ_logo.jpg" alt="University Logo">
+                <span>Inoue Laboratory</span>
+            </h1>
+            <ul class="language-switcher">
+                <li class="lang-btn active-lang" onclick="setLanguage('ja')">Japanese</li>
+                <li class="lang-btn" onclick="setLanguage('en')">English</li>
+            </ul>
+        </div>
+        <nav>
+            <div class="nav-item"><a href="index.html">トップ</a></div>
+            <div class="nav-item"><a href="research.html">研究内容</a></div>
+            <div class="nav-item dropdown">
+                <a href="member.html">メンバー</a>
+                <div class="dropdown-content">
+                    <div><a href="professor.html">教員</a></div>
+                    <div><a href="students.html#doctor">博士課程</a></div>
+                    <div><a href="students.html#m2">修士２年</a></div>
+                    <div><a href="students.html#m1">博士１年</a></div>
+                    <div><a href="students.html#b4">学部生</a></div>
+                    <div><a href="students.html#gradutated">卒業生</a></div>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="lab-intro.html">研究室紹介</a>
+                <div class="dropdown-content">
+                    <div><a href="activity-report.html">活動報告</a></div>
+                    <div><a href="activity-photos.html">活動写真</a></div>
+                </div>
+            </div>
+            <div class="nav-item"><a href="contact.html">コンタクト</a></div>
+            <div class="nav-item"><a href="aspiring-info.html">学生募集</a></div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <h3>コンタクト</h3>
+            
+        <h3>アクセス</h3>
+            <div class="map">
+                <p>井上先生の研究室は大岡山キャンパス西9号館4階415室です。なお不在の場合、本館2階工学院長室にいる可能性もございます。
+                井上研究室学生室は同じく4階416号室です。</p>
+                <img src="G:\マイドライブ\井上研HP\lab-picture\access2.gif">
+                <!-- <img src="/home/me0000/users/inouelab/public_html/images/access2"> -->
+                
+            </div>
+    </div>
+
+    
+    
+
+    <footer>
+        <p data-key="copyright">&copy; 2024 Inoue Laboratory. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+<script>
+    function setLanguage(lang) {
+        if (lang === 'en') {
+            window.location.href = 'index-en.html'; // 英語ページへのリダイレクト
+        } else if (lang === 'ja') {
+            window.location.href = 'index.html'; // 日本語ページへのリダイレクト
+        }
+    }
+</script>
 
 <body>
     <header>
@@ -14,7 +23,10 @@
                 <img src="univ_logo.jpg" alt="University Logo">
                 <span>Inoue Laboratory</span>
             </h1>
-            
+            <ul class="language-switcher">
+                <li class="lang-btn active-lang" onclick="setLanguage('ja')">Japanese</li>
+                <li class="lang-btn" onclick="setLanguage('en')">English</li>
+            </ul>
         </div>
         <nav>
             <div class="nav-item"><a href="index.html">トップ</a></div>
@@ -41,6 +53,7 @@
             <div class="nav-item"><a href="aspiring-info.html">学生募集</a></div>
         </nav>
     </header>
+
 
     <div class="main-container">
         <div class="professor">
@@ -138,8 +151,11 @@
                 </ul>
             </div>
         </div>
-    </div>
+        <div>
+            <h3></a>学生メンバーは<a href="students.html">こちら</a></h3>
+        </div>
 
+    </div>
     
 
     <footer>
